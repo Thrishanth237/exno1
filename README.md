@@ -81,6 +81,20 @@ df.fillna(method='bfill')
 df.fillna({'NAME':'THRISHANTH','M4':55,'TOTAL':420.0})
 ```
 ![Screenshot 2025-03-07 112002](https://github.com/user-attachments/assets/a341e5d2-7cb8-4372-88a1-d03bd2d8b956)
+![Screenshot 2025-03-07 112007](https://github.com/user-attachments/assets/5e9642f4-66c3-44c7-b3d8-b509b8006dcf)
+![Screenshot 2025-03-07 112011](https://github.com/user-attachments/assets/06965428-17f1-455c-a3f7-7c63a27fa627)
+![Screenshot 2025-03-07 112017](https://github.com/user-attachments/assets/baef2cf5-f2fd-438d-9c9b-eafb110a443b)
+![Screenshot 2025-03-07 112035](https://github.com/user-attachments/assets/25ede72c-655e-47a6-8e29-35d105b62125)
+![Screenshot 2025-03-07 112041](https://github.com/user-attachments/assets/37152137-6ddb-408b-98ba-a63deb35dd5c)
+![Screenshot 2025-03-07 112045](https://github.com/user-attachments/assets/40ac850d-c56d-4ffa-9632-c16587a7c893)
+![Screenshot 2025-03-07 112053](https://github.com/user-attachments/assets/d2b5f23e-a85b-4f29-b805-77464b318a71)
+![Screenshot 2025-03-07 112102](https://github.com/user-attachments/assets/6bb4ace9-989b-453a-9779-bc8df46e2460)
+![Screenshot 2025-03-07 112107](https://github.com/user-attachments/assets/cbc87889-1ca9-4939-ae76-e2c28e85e955)
+![Screenshot 2025-03-07 112113](https://github.com/user-attachments/assets/7b48113f-b6c9-4692-a2cd-e58ccf0cbb26)
+![Screenshot 2025-03-07 112119](https://github.com/user-attachments/assets/3c815d75-f52b-4af5-9fe8-ebf8a215f3c9)
+![Screenshot 2025-03-07 112130](https://github.com/user-attachments/assets/4890bee3-836a-4cb5-a848-aa018ead2fe5)
+![Screenshot 2025-03-07 112134](https://github.com/user-attachments/assets/5254a65c-f62c-458f-93f0-57c61a8deead)
+![Screenshot 2025-03-07 112138](https://github.com/user-attachments/assets/860c6da8-1c1d-4b6c-99b9-0463020112cf)
 
 
 
@@ -89,5 +103,4 @@ df.fillna({'NAME':'THRISHANTH','M4':55,'TOTAL':420.0})
 
 
 # Result
-          <<include your Result here>>
-
+       Thus the given data is read and data cleaning is performed.
