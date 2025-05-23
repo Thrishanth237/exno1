@@ -1,5 +1,7 @@
 # Exno:1
 Data Cleaning Process
+# NAME.- THRISHANTH.E
+# REG.NO.- 212224230291
 
 # AIM
 To read the given data and perform data cleaning and save the cleaned data to a file.
@@ -21,86 +23,127 @@ STEP 5: Remove outliers using IQR
 STEP 6: Use zscore of to remove outliers
 
 # Coding and Output
-```
 import pandas as pd
 df=pd.read_csv("/content/SAMPLEIDS.csv")
 df
-```
-![Screenshot 2025-03-07 111644](https://github.com/user-attachments/assets/9e47be65-1254-48ab-bd1b-dc008ced3c5a)
 
-```
-df.head()
-```
-![Screenshot 2025-03-07 111655](https://github.com/user-attachments/assets/20234c01-4649-48c1-a63b-5cec4ed5d7ba)
-
-```
-df.tail()
-```
-![Screenshot 2025-03-07 111703](https://github.com/user-attachments/assets/57ed5001-e1e4-4ff7-9106-bd975ad5ec9d)
-
-```
-df.notnull()
-```
-![Screenshot 2025-03-07 111815](https://github.com/user-attachments/assets/e3966742-b8e3-4d55-ba12-65bc7febeaa4)
-
-```
-df.isnull()
-```
-![Screenshot 2025-03-07 111830](https://github.com/user-attachments/assets/04e872bc-8c16-43d8-8358-e0452c12c899)
-```
-df.fillna(5)
-```
-![Screenshot 2025-03-07 111848](https://github.com/user-attachments/assets/49c51779-82ad-4eae-9b38-db6ff913daa6)
-```
-df.dropna(axis=0)
-```
-![Screenshot 2025-03-07 111925](https://github.com/user-attachments/assets/124cb19b-501a-4a4a-a6b6-112e1a6e6726)
-
-```
-df.dropna(axis=1)
-```
-![Screenshot 2025-03-07 111930](https://github.com/user-attachments/assets/a8b46775-3730-4a33-8439-3d9c5d81f072)
+![Screenshot 2025-03-04 205446](https://github.com/user-attachments/assets/98ac9420-d334-46fc-91af-2bd0df00729e)
 ```
 df.isnull().sum()
 ```
-![Screenshot 2025-03-07 111935](https://github.com/user-attachments/assets/393eba36-9c1c-4073-bb44-f09796ea5d0f)
+![Screenshot 2025-03-04 210028](https://github.com/user-attachments/assets/56422d77-1b6f-42a4-aa99-4f02a6da47a1)
 ```
-df.isnull().any()
+df.isnull().any()<br>
 ```
-![Screenshot 2025-03-07 111941](https://github.com/user-attachments/assets/5e841b29-e166-4eba-b5f0-280d696498cb)
+![Screenshot 2025-03-04 210304](https://github.com/user-attachments/assets/2cd982fb-15f0-4510-b09b-cbf665fac6c0)
+```
+df.dropna()
+```
+![Screenshot 2025-03-04 210432](https://github.com/user-attachments/assets/c8989206-c474-4bb0-a326-7ada03b748f5)
+```
+df.fillna(0)
+```
+![Screenshot 2025-03-04 210508](https://github.com/user-attachments/assets/bbb96bc8-aae9-4f1c-89a5-6a65dc3dfe8b)
 ```
 df.fillna(method='ffill')
 ```
-![Screenshot 2025-03-07 111949](https://github.com/user-attachments/assets/23180a7d-2665-4212-86d3-58a8cf01af3d)
+![Screenshot 2025-03-04 210609](https://github.com/user-attachments/assets/6adfa1ee-f7ba-4c2c-a34c-acc37ed5903e)
 ```
 df.fillna(method='bfill')
 ```
-![Screenshot 2025-03-07 111954](https://github.com/user-attachments/assets/85b50ff3-3e6f-4b9f-a6c9-cb5834c2428f)
-
+![Screenshot 2025-03-04 210652](https://github.com/user-attachments/assets/94a0fd61-837e-448c-b31e-112a687191c1)
 ```
-df.fillna({'NAME':'THRISHANTH','M4':55,'TOTAL':420.0})
+df_dropped = df.dropna()
+df_dropped
 ```
-![Screenshot 2025-03-07 112002](https://github.com/user-attachments/assets/a341e5d2-7cb8-4372-88a1-d03bd2d8b956)
-![Screenshot 2025-03-07 112007](https://github.com/user-attachments/assets/5e9642f4-66c3-44c7-b3d8-b509b8006dcf)
-![Screenshot 2025-03-07 112011](https://github.com/user-attachments/assets/06965428-17f1-455c-a3f7-7c63a27fa627)
-![Screenshot 2025-03-07 112017](https://github.com/user-attachments/assets/baef2cf5-f2fd-438d-9c9b-eafb110a443b)
-![Screenshot 2025-03-07 112035](https://github.com/user-attachments/assets/25ede72c-655e-47a6-8e29-35d105b62125)
-![Screenshot 2025-03-07 112041](https://github.com/user-attachments/assets/37152137-6ddb-408b-98ba-a63deb35dd5c)
-![Screenshot 2025-03-07 112045](https://github.com/user-attachments/assets/40ac850d-c56d-4ffa-9632-c16587a7c893)
-![Screenshot 2025-03-07 112053](https://github.com/user-attachments/assets/d2b5f23e-a85b-4f29-b805-77464b318a71)
-![Screenshot 2025-03-07 112102](https://github.com/user-attachments/assets/6bb4ace9-989b-453a-9779-bc8df46e2460)
-![Screenshot 2025-03-07 112107](https://github.com/user-attachments/assets/cbc87889-1ca9-4939-ae76-e2c28e85e955)
-![Screenshot 2025-03-07 112113](https://github.com/user-attachments/assets/7b48113f-b6c9-4692-a2cd-e58ccf0cbb26)
-![Screenshot 2025-03-07 112119](https://github.com/user-attachments/assets/3c815d75-f52b-4af5-9fe8-ebf8a215f3c9)
-![Screenshot 2025-03-07 112130](https://github.com/user-attachments/assets/4890bee3-836a-4cb5-a848-aa018ead2fe5)
-![Screenshot 2025-03-07 112134](https://github.com/user-attachments/assets/5254a65c-f62c-458f-93f0-57c61a8deead)
-![Screenshot 2025-03-07 112138](https://github.com/user-attachments/assets/860c6da8-1c1d-4b6c-99b9-0463020112cf)
+![Screenshot 2025-03-04 210916](https://github.com/user-attachments/assets/0a58678e-0fa2-4f7f-bba9-545302fc91c6)
+```
+df.fillna({'GENDER':'MALE','NAME':'SRI','ADDRESS':'POONAMALEE','M1':98,'M2':87,'M3':76,'M4':92,'TOTAL':305,'AVG':89.999999})
+```
+![Screenshot 2025-03-04 211031](https://github.com/user-attachments/assets/c1b98abb-19f2-4486-b02a-49cbb49ec5d2)
+```
+ir=pd.read_csv("/content/iris.csv")
+ir
+```
+![Screenshot 2025-03-04 211107](https://github.com/user-attachments/assets/a6b7f662-eb6b-46f2-86bf-c159dd3226b8)
+```
+ir.describe()
+```
+![Screenshot 2025-03-04 211143](https://github.com/user-attachments/assets/99162c39-9677-410f-a78a-b9bb84ef48de)
+```
+import seaborn as sns
+sns.boxplot(x='sepal_width',data=ir)
+```
+![Screenshot 2025-03-04 211230](https://github.com/user-attachments/assets/b398f218-921e-4045-8983-c79c7467cdb7)
+```
+q1=ir.sepal_width.quantile(0.25)
+q3=ir.sepal_width.quantile(0.75)
+iq=q3-q1
+print(q3)
+```
+![Screenshot 2025-03-04 211316](https://github.com/user-attachments/assets/02dcc8a6-d6c2-40d0-9fd5-398bf06ed3b2)
+```
+rid=ir[((ir.sepal_width<(q1-1.5*iq))|(ir.sepal_width>(q3+1.5*iq)))]
+rid['sepal_width']
+```
+![Screenshot 2025-03-04 211414](https://github.com/user-attachments/assets/0cd26dc2-8d9d-4133-ab65-1266ffef2720)
+```
+delid=ir[~((ir.sepal_width<(q1-1.5*iq))|(ir.sepal_width>(q3+1.5*iq)))]
+delid
+```
+![Screenshot 2025-03-04 211553](https://github.com/user-attachments/assets/bfad9299-0cf2-421d-9ad7-86a4490a83ad)
+```
+sns.boxplot(x='sepal_width',data=delid)
+```
+![Screenshot 2025-03-04 211636](https://github.com/user-attachments/assets/ef94f0f4-783b-45a1-bf55-049bc8451398)
+```
+import matplotlib.pyplot as plt
+import pandas as pd
+import numpy as np
+import scipy.stats as stats
 
 
+dataset=pd.read_csv("heights.csv")
+dataset
+```
+![Screenshot 2025-03-04 211730](https://github.com/user-attachments/assets/ca58957c-4608-4f6d-917b-80d8edd4c297)
+```
+df = pd.read_csv("heights.csv")
+q1 = df['height'].quantile(0.25)
+q2 = df['height'].quantile(0.5)
+q3 = df['height'].quantile(0.75)
 
 
-
+iqr = q3-q1
+iqr
+```
+![image](https://github.com/user-attachments/assets/398577f5-8d9d-4a38-8e72-65ee3bea7bb0)
+```
+low = q1- 1.5*iqr
+low
+```
+![Screenshot 2025-03-04 211841](https://github.com/user-attachments/assets/47447697-93ba-4d31-92d8-ed459fc816ee)
+```
+high = q3 + 1.5*iqr
+high
+```
+![Screenshot 2025-03-04 211910](https://github.com/user-attachments/assets/2fcb4843-2760-4a0d-b7d4-e6d1ca432bc2)
+```
+df1 = df[((df['height'] >=low)& (df['height'] <=high))]
+df1
+```
+![Screenshot 2025-03-04 211947](https://github.com/user-attachments/assets/378d4ceb-f673-42fd-a4a0-0fc4c510cd7e)
+```
+z = np.abs(stats.zscore(df['height']))
+z
+```
+![image](https://github.com/user-attachments/assets/40d8c650-7ee8-4e3a-a752-16b8e32f666b)
+```
+df1 = df[z<3]
+df1
+```
+![Screenshot 2025-03-04 212127](https://github.com/user-attachments/assets/39a061e1-ef2a-4b5e-934e-f3ca0e18e37b)
 
 
 # Result
-       Thus the given data is read and data cleaning is performed.
+Thus we have cleaned the data and removed the outliers by detection using IQR and Z-score method
